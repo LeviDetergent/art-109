@@ -1,0 +1,164 @@
+
+body{
+    animation: change-color 10s infinite alternate;
+}
+
+@keyframes change-color {
+    0% {background-color: antiquewhite;}
+    50% {background-color: yellow;}
+    100% {background-color: aquamarine;}
+}
+
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 80px auto;
+    animation: skew 3s infinite alternate;
+}
+
+@keyframes skew {
+    0% {transform: skew(0deg, 0deg);}
+    100% {transform: skew(30deg, 20deg);}
+}
+
+.square {
+    background-color: orangered;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 50px auto;
+    transition: all 1s;
+}
+
+.square:hover {
+    background-color: greenyellow;
+    transform: rotate(30deg);
+}
+
+.button-div {
+    text-align: center;
+}
+
+.button {
+    color: white;
+    background-color: green;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .5s;
+}
+
+.button:hover {
+    background-color: greenyellow;
+    color: black;
+    transform: scale(1.5);
+}
+
+.loading {
+    background-color: green;
+    animation: stretch 5s 3 normal;
+    width: 80vw;
+}
+
+@keyframes stretch {
+    0% {width: 100px;}
+    100% {width: 80vw;}
+}
+
+/* Hover Page*/
+body.hover-page {
+    background-color: lightblue;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    animation: none;
+}
+body.hover-page .title {
+    animation: none;
+}
+.circle {
+    background-color: purple;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 50px auto;
+    transition: all 0.8s;
+}
+.circle:hover {
+    background-color: pink;
+    transform: scale(1.5);
+    box-shadow: 0 0 30px purple;
+}
+.input-box {
+    background-color: white;
+    border: 3px solid gray;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 30px auto;
+    width: 300px;
+    display: block;
+    transition: all 0.5s;
+}
+.input-box:focus {
+    border-color: blue;
+    background-color: lightyellow;
+    transform: scale(1.1);
+    outline: none;
+}
+body.hover-page .button {
+    background-color: orange;
+    margin: 20px;
+}
+body.hover-page .button:hover {
+    background-color: red;
+    color: white;
+    transform: scale(1.2);
+}
+
+/* Matrix */
+body.animation-page {
+    background-color: black;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    animation: none;
+    overflow: hidden;
+}
+body.animation-page .title {
+    animation: bounce 2s infinite;
+    color: lime;
+}
+@keyframes bounce {
+    0%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-20px);}
+}
+.matrix-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+.matrix-column {
+    position: absolute;
+    color: lime;
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    animation: matrix-fall 6s infinite linear;
+    opacity: 0.8;
+}
+@keyframes matrix-fall {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
