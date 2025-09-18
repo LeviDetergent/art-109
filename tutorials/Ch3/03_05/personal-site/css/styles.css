@@ -1,0 +1,128 @@
+/*
+COLOR PALETTE - BERSERK THEME
+Crimson red   #dc143c
+Blood red     #8b0000
+Pure black    #000000
+Dark gray     #1a1a1a
+Light gray    #333333
+Off-white     #f0f0f0
+*/
+/* GLOBAL STYLES
+------------------------------------*/
+/*
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background: #000000;
+    color: #f0f0f0;
+}
+/* links */
+a {
+    color: #dc143c;
+}
+a:hover {
+    color: #8b0000;
+    text-decoration: none;
+}
+footer a {
+    color: #8b0000;
+}
+footer a:hover {
+    color: #dc143c;
+}
+.btn {
+    background: #dc143c;
+    color: #f0f0f0;
+    text-decoration: none;
+    border: 2px solid #8b0000;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    background: #8b0000;
+    border-color: #dc143c;
+}
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
+/* HOME
+------------------------------------*/
+.home {
+    background: url(../images/berserk.png) no-repeat;
+    background-size: cover;
+}
+.home .content-wrapper {
+    background: rgb(0 0 0 / 0.85);
+    border: 1px solid #dc143c;
+}
+/* RESUME
+------------------------------------*/
+.resume header {
+    background: url(../images/berserk-cropped.png) center;
+    background-size: cover;
+    content:"";
+    display: block;
+    height: 375px;
+    border-bottom: 3px solid #dc143c;
+}
+.resume-section {
+    margin-bottom: 50px;
+}
+.resume-section h2 {
+    border-bottom: 2px dashed #333333;
+    color: #dc143c;
+}
+.download-link {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+/* Profile
+------------------------------------*/
+.project-item {
+    display: flow-root;
+    margin: 30px 0;
+    border-left: 4px solid #8b0000;
+    padding-left: 15px;
+}
+.project-item img {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    border: 2px solid #333333;
+}
+/* Projects
+------------------------------------*/
+/* Work Experience
+------------------------------------*/
+/* Education
+------------------------------------*/
+/* FOOTER
+------------------------------------*/
+footer {
+    background: #1a1a1a;
+    color: #f0f0f0;
+    border-top: 2px solid #dc143c;
+}
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+.socials li {
+    display: inline-block;
+}
+.socials img {
+    width: 32px;
+    filter: brightness(0.8) sepia(1) hue-rotate(340deg) saturate(2);
+    transition: filter 0.3s ease;
+}
+.socials img:hover {
+    filter: brightness(1) sepia(1) hue-rotate(340deg) saturate(3);
+}
