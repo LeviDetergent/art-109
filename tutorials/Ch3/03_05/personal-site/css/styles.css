@@ -14,6 +14,8 @@ Off-white     #f0f0f0
 */
 html {
     box-sizing: border-box;
+    height: 100%;
+    margin: 0;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -21,6 +23,10 @@ html {
 body {
     background: #000000;
     color: #f0f0f0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 /* links */
 a {
@@ -51,6 +57,7 @@ footer a:hover {
     margin: 0 auto;
     padding: 30px;
     max-width: 900px;
+    flex: 1;
 }
 /* HOME
 ------------------------------------*/
@@ -59,8 +66,12 @@ footer a:hover {
     background-size: cover;
 }
 .home .content-wrapper {
+    flex: 1 0 auto;
+}
+.content-bg {
     background: rgb(0 0 0 / 0.85);
     border: 1px solid #dc143c;
+    padding: 30px;
 }
 /* RESUME
 ------------------------------------*/
@@ -102,6 +113,11 @@ footer a:hover {
 ------------------------------------*/
 /* Work Experience
 ------------------------------------*/
+.work-item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
+}
 /* Education
 ------------------------------------*/
 /* FOOTER
@@ -110,6 +126,10 @@ footer {
     background: #1a1a1a;
     color: #f0f0f0;
     border-top: 2px solid #dc143c;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-shrink: 0;
 }
 .socials {
     list-style-type: none;
@@ -117,6 +137,7 @@ footer {
 }
 .socials li {
     display: inline-block;
+    margin-left: 10px;
 }
 .socials img {
     width: 32px;
@@ -125,4 +146,7 @@ footer {
 }
 .socials img:hover {
     filter: brightness(1) sepia(1) hue-rotate(340deg) saturate(3);
+}
+.socials img:hover {
+    opacity: 0.5;
 }
