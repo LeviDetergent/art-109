@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Dat Ngo, Digital Media Artist</title>
+      <meta name="description" 
+        content="Dat Ngo is a digital artist working in web design, illustration, and 3d modeling.">
+      <meta name="keywords" content="Dat Ngo, Digital Artist, 3d modeler.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Itim&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body class="resume">
@@ -30,14 +36,16 @@
         <h2>Projects</h2>
         <p>View selected projects below. More information can be found at <a href="https://levidetergent.github.io/index.html" target="_blank">my artist's portfolio</a>.</p>
 
-        <section class="project-item">
-          <img src="images/portfolio.png" srcset="images/portfolio.png" alt="My portfolio">
-          <h3>Personal Artist's Portfolio</h3>
-          <p>Designed a personal artist portfolio website, featuring projects, using HTML and Bootstrap to ensure an aesthetically pleasing and user-friendly interface. 
-            Completed full development in one day, demonstrating strong execution and time management. 
-            Integrated a styled Google Form for contact, adapting to hosting limitations while maintaining visual consistency.</p>
-          <a class="btn" href="https://levidetergent.github.io/index.html" target="_blank">Portfolio</a>
-        </section>
+        <div class="project-wrapper">
+          <section class="project-item">
+            <img src="images/portfolio.png" srcset="images/portfolio.png" alt="My portfolio">
+            <h3>Personal Artist's Portfolio</h3>
+            <p>Designed a personal artist portfolio website, featuring projects, using HTML and Bootstrap to ensure an aesthetically pleasing and user-friendly interface. 
+              Completed full development in one day, demonstrating strong execution and time management. 
+              Integrated a styled Google Form for contact, adapting to hosting limitations while maintaining visual consistency.</p>
+            <a class="btn" href="https://levidetergent.github.io/index.html" target="_blank">Portfolio</a>
+          </section>
+        </div>
       </section>
 
       <!-- //  WORK EXPERIENCE  // -->
@@ -69,7 +77,7 @@
         <!-- Start content edits below this line.  -->
         <h2>Education</h2>
 
-        <section>
+        <section class="education-item">
           <h3>SAN JOSE STATE UNIVERSITY - San Jose, California</h3>
           <p>B.F.A., Digital Media Art <br>
             Minor: Asian American Studies<br>
