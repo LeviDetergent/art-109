@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+
+canvas {
+    
+}
+
+#scene-container {
+    width: 400px;
+    height: 400px;
+    background: url("../assets/garden.jpg") no-repeat center center;
+    background-size: cover;
+    margin: 0 auto;
+}
